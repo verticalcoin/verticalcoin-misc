@@ -4,7 +4,7 @@ Verticalcoin systemd service
 
 Build
 ----------------------
-1.  Clone the source:
+1.  Clone the repository:
 ```
         git clone https://github.com/verticalcoin/verticalcoin-misc
 ```
@@ -23,6 +23,23 @@ Build
         service verticalcoind status
         
         [...]
-        "Active: active (running) since Tue 2018-08-28 22:17:42 CEST; 16min ago"
+        "Active: active (running) since Sun 2018-08-12 12:08:42 CEST; 50ms ago"
         [...] 
+```
+
+Use install-service.sh
+---------------------
+1.  Clone the repository:
+```
+        git clone https://github.com/verticalcoin/verticalcoin-misc
+
+```
+2.  Run script:
+``` 
+        cd verticalcoin-misc
+		./install-service.sh
+
+		[...]
+        "Active: active (running) since Sun 2018-08-12 12:08:42 CEST; 50ms ago"
+        [...]
 ```
