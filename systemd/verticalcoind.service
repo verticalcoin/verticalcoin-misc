@@ -1,0 +1,14 @@
+[Unit]
+Description=Verticalcoind Wallet RPC Daemon
+After=network.target verticalcoind.service
+
+[Service]
+User=root
+Group=root
+Restart=always
+RestartSec=60
+Type=simple
+ExecStart=/usr/local/bin/verticalcoind -daemon -config=/root/.verticalcoin/verticalcoin.conf 
+
+[Install]
+WantedBy=multi-user.target
