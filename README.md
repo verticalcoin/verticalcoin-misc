@@ -6,11 +6,11 @@ Build
 ----------------------
 1.  Clone the source:
 
-        git clone https://github.com/verticalcoin/verticalcoin-MISC
+        git clone https://github.com/verticalcoin/verticalcoin-misc
 
 2.  Copy systemd .service file
 
-        cp -f systemd/verticalcoind.service /etc/systemd/system/verticalcoind.service
+        cp -f verticalcoin-misc/systemd/verticalcoind.service /etc/systemd/system/verticalcoind.service
         chmod a+x /etc/systemd/system/verticalcoind.service
 
 3.  enable service
