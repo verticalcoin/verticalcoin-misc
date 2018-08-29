@@ -8,7 +8,7 @@ Group=root
 Restart=always
 RestartSec=60
 Type=simple
-ExecStart=/usr/local/bin/verticalcoind -daemon -config=/root/.verticalcoin/verticalcoin.conf 
+ExecStart=/usr/local/bin/verticalcoind -config=/root/.verticalcoin/verticalcoin.conf 
 
 [Install]
 WantedBy=multi-user.target
