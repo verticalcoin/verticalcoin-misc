@@ -9,16 +9,16 @@ setup service
         git clone https://github.com/verticalcoin/verticalcoin-misc
 ```
 2. 
-    Check verticalcoin.conf and remove "daemon=1". It´s nessesary that verticalcoind is not run as daemon.
+   Check verticalcoin.conf and remove "daemon=1". It´s nessesary that verticalcoind is not run as daemon.
 ```
         nano ~/.verticalcoin/verticalcoin.conf
 ```
 
-    comment out daemon=1
+>comment out daemon=1
 
 ```
         dbcache=300
-        maxconnections=800
+        maxconnections=150
         
         rpcuser=verticalcoin
         rpcpassword=securepassword
@@ -58,7 +58,9 @@ Use install-service.sh
         git clone https://github.com/verticalcoin/verticalcoin-misc
 
 ```
-2.  Run script:
+2.  Check your ~/.verticalcoin/verticalcoin.conf for daemon=1 and remove it. 
+
+3.  Run script:
 ``` 
         cd verticalcoin-misc
 		./install-service.sh
