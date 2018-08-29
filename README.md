@@ -13,7 +13,9 @@ setup service
 ```
         nano ~/.verticalcoin/verticalcoin.conf
 ```
-    comment daemon=1 line out 
+
+    comment out daemon=1
+
 ```
         dbcache=300
         maxconnections=800
